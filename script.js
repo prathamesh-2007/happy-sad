@@ -68,6 +68,12 @@ noButton.addEventListener('click', function() {
     if (noClickCount < 6) {
       noButton.textContent = noButtonTexts[noClickCount];
     }
+  } else {
+    // User clicked the final "No" button (Chalo fir katti!!!!)
+    // Show sorry page
+    imageDisplay.src = './images/image6.gif';
+    mainQuestion.textContent = "I am sorry if I have done any mistake. Please forgive me!";
+    responseButtons.style.display = 'none';
   }
 });
 
